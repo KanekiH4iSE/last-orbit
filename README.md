@@ -14,7 +14,7 @@ A top-down space survival game in the style of Survivor.io. Pilot a shuttle agai
 - Hangar: spend gold on 3 ships and 6 permanent upgrades. A codex lists every enemy. Progress is saved in the browser.
 - Endless space background with planets and moons, suns, bright stars, nebulae and black holes.
 
-Single file (`index.html`), no build step, no dependencies. Built with AI assistance (vibe-coded) for Cycle 1, Personal Product.
+Plain HTML, CSS and JavaScript, no build step, no dependencies. Built with AI assistance (vibe-coded) for Cycle 1, Personal Product.
 
 ## Run locally
 
@@ -23,3 +23,15 @@ Open `index.html` in a browser.
 ## Deploy
 
 GitHub Pages: Settings → Pages → Deploy from a branch → `main` / root.
+
+## Files
+
+- `index.html` - page markup and script includes
+- `style.css` - all styles
+- `js/01-core.js` - constants, helpers, save data, audio
+- `js/02-data.js` - weapons, passives, enemies, ships, upgrades
+- `js/03-background.js` - procedural space, planets, black holes
+- `js/04-game.js` - game state, menus, hangar, level-up, entities, weapons
+- `js/05-update.js` - main update loop, spawning, collisions
+- `js/06-render.js` - drawing
+- `js/07-input.js` - input, game loop, startup
